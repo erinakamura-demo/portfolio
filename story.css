@@ -1,0 +1,78 @@
+body{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header h1{
+  background-image: url(../The_Plant_Cafe_code/images/header4.jpg);
+  background-size:cover;
+  height:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:30px;
+  color:white;
+}
+
+header h1::before{
+  display:block;
+	content:"";
+	padding-top:50%;
+}
+
+main{
+  padding:30px;
+  background-color: #095941;
+  color: white;
+}
+
+.main_content{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.concept{
+  display: flex;
+}
+
+.description{
+  flex:1;
+  margin:auto;
+  padding:0 20px;
+}
+
+.description h2{
+  text-align: center;
+  font-size:23px;
+  margin-bottom:15px;
+  font-weight: bold;
+}
+
+.image{
+  flex:1;
+  text-align: center;
+  padding:20px;
+}
+
+.image img{
+  width:100%;
+}
+
+.sustainability{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 767px){
+  .concept{
+    display: block;
+    padding:20px;
+  }
+
+  .sustainability{
+    display: block;
+    padding:20px;
+  }
+
+}

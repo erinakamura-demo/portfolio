@@ -1,0 +1,108 @@
+body{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header h1{
+  background-image: url(../The_Plant_Cafe_code/images/header5.jpg);
+  background-size:cover;
+  height:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:30px;
+  color:white;
+}
+
+header h1::before{
+  display:block;
+	content:"";
+	padding-top:50%;
+}
+
+main{
+  background-color: #095941;
+  color: white;
+}
+
+.main_content{
+  padding-top:40px;
+}
+
+.main_content h2{
+  font-size:30px;
+  padding-bottom:40px;
+  background-image: url(../The_Plant_Cafe_code/images/underline.png);
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+  padding:10px 0px 10px 20px;
+  max-width: 450px;
+}
+
+.container{
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  padding:30px 10px;
+  margin: 0 auto;
+}
+
+.container dl{
+  display: flex;
+  flex-wrap: wrap;
+  flex:1;
+}
+
+.container dt{
+  width:80%;
+  padding:10px 0px;
+  font-weight: normal;
+}
+
+.container dd{
+  width:20%;
+  padding:10px 0px;
+}
+
+.container img{
+  width:100%;
+}
+
+.image{
+  flex:1;
+  padding:0px 20px;
+}
+
+@media screen and (max-width: 767px){
+  .container{
+    display: block;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .main_content h2{
+    font-size:25px;
+  }
+
+  .image:first-of-type{
+    padding-top:20px;
+  }
+
+  .container dl{
+    padding:0px 40px;
+  }
+
+  span{
+    display: none;
+  }
+
+  .container dt{
+    width:70%;
+  }
+  
+  .container dd{
+    width:30%;
+    text-align: center;
+  }
+}
